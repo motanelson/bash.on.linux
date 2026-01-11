@@ -15,7 +15,7 @@ int main(int argc , char *argv[]){
         
         n=strlen(c)-1;
         if(n<0)n=0;
-        c[n]=0;
+        if(c[n]==13 || c[n]==10)c[n]=0;
         if(strcmp(c,"exit")==0)break;
         if(strcmp(c,"EXIT")==0)break;
         if(strcmp(c,"Exit")==0)break;
